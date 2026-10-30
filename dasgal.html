@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h2 id="day">📅 Өдрөө сонго</h2>
+    <p id="lessons">—</p>
+    <p id="count"></p>
+
+    <button id="mon" onclick="showDay(0)">Да</button>
+    <button id="tue" onclick="showDay(1)">Мя</button>
+    <button id="wed" onclick="showDay(2)">Лх</button>
+    <button id="thu" onclick="showDay(3)">Пү</button>
+    <button id="fri" onclick="showDay(4)">Ба</button>
+    <hr />
+    <h2>🚚 Хүргэлтийн үнэ</h2>
+    <input id="district" type="text" placeholder="Дүүрэг" />
+    <button id="check" onclick="checkFee()">Шалгах</button>
+    <p id="result"></p>
+    <hr />
+    <p id="to">Хэнд: —</p>
+    <p id="countFriend">0 хүн сонгосон</p>
+
+    <button id="f0" onclick="addFriend(0)">Бат</button>
+    <button id="f1" onclick="addFriend(1)">Сараа</button>
+    <button id="f2" onclick="addFriend(2)">Ану</button>
+    <button id="f3" onclick="addFriend(3)">Болд</button>
+    <hr />
+    <h2 id="photo">🏔️ Хөвсгөл нуур</h2>
+    <p id="position">1 / 5</p>
+
+    <button id="prevBtn" onclick="goPrev()">◀ Өмнөх</button>
+    <button id="nextBtn" onclick="goNext()">Дараах ▶</button>
+    <hr />
+    <h1 id="total">0</h1>
+    <p id="history">Оноо: —</p>
+
+    <button id="one" onclick="addPoints(1)">+1</button>
+    <button id="two" onclick="addPoints(2)">+2</button>
+    <button id="three" onclick="addPoints(3)">+3</button>
+    <button id="undo" onclick="undo()">↩️ Буцаах</button>
+    <hr />
+    <h2>🏷️ Хэдэн төгрөгтэй вэ?</h2>
+    <input id="budget" type="number" placeholder="Мөнгө" />
+    <button id="filterBtn" onclick="filterProducts()">Шүүх</button>
+    <p id="found"></p>
+    <pre id="list"></pre>
+    <hr />
+    <h2>📝 Ангийн дүн</h2>
+    <input id="scores" type="text" placeholder="85, 92, 70" />
+    <button id="calc" onclick="calculate()">Тооцоолох</button>
+    <p id="average"></p>
+    <p id="best"></p>
+    <p id="failed"></p>
+    <hr />
+    <script src="dasgal.js"></script>
+  </body>
+</html>
